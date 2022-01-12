@@ -207,9 +207,9 @@ header .slide .collection {
 
 /* items*/
 section#items {
-    width: 100%; height: 1250px;
+    width: 100%; height: 1200px;
     overflow: hidden;
-    margin: 35px 0 ;
+    margin: 35px 0;
     box-sizing: border-box;
 }
 #items .wrap {
@@ -270,12 +270,12 @@ section#items {
 #items .category > li .items li:nth-child(5) {
     width: 24.5%;
     position: absolute;
-    top: 55%; left: 48%;
+    top: 55%; left: 45%;
 }
 #items .category > li .items li:nth-child(6) {
     width: 24.5%;
     position: absolute;
-    top: 55%; left: 75%;
+    top: 55%; right: 0;
 }
 #items .category > li .items .info {
     display: none;
@@ -319,15 +319,172 @@ section#items {
     width: 100%; height: 100%; 
 }
 
-section#lookbook {
-    width: 100%; height: 750px;
-    background: #aaa;
+/* lookbook */
+#lookbook {
+    width: 100%; height: 325px;
+    background: #;
+    margin: 35px 0 100px 0 ;
+    overflow: hidden;
+}
+#lookbook ul {
+    display: table;
+    margin-left: auto; margin-right: auto;
+}
+#lookbook li {
+    width: 32.6666%; height: 325px; 
+    float: left;
+    position: relative;
+}
+#lookbook li.women {
+    margin: 0 1%; 
+}
+#lookbook li img {
+    width: 100%; height: 100%; 
+}
+#lookbook li div {
+    position: absolute;
+    top: 10%; right: 0;
+    padding-right: 10px;
+/*    width: 55%; height: 40%; */
+}
+#lookbook li div span {
+    display: block;
+    font-size: 13px; 
+    text-align: right;
+    font-weight: 3;
+}
+#lookbook li div span.title {
+    font-size: 24px; 
+    text-transform: uppercase;
+    font-weight: 300;
+}
+#lookbook li div span b {
+}
+#lookbook li div button {
+    position:absolute;
+    bottom: -70px; right: 0;
+    margin-right: 10px;
+    background: rgba(0,0,0,0);
+    width: 130px; height: 53px;
+    font-size: 16px;
+    border: 1px solid #333;
+}
+#lookbook li div button:hover {
+    background: #00c8c8;
+    color: #fff;
+    border: none;
+    cursor: pointer
 }
 
+/* footer */
 footer {
-    width: 100%; height: 540px;
-    background: #888;
+    width: 100%;
+    background: #f8f8f8;
 }
+footer .wrap {}
+footer .f-info {
+    width: 100%; height: 240px;
+    padding: 40px 120px 0 ;
+    box-sizing: border-box;
+}
+footer .f-info > li {
+    width: 20%;
+    float: left;
+/*    box-sizing: border-box;*/
+    font-weight: 10;
+}
+footer .f-info > li:first-child {
+    margin-left: 0;
+}
+footer .f-info > li:last-child {
+    margin-right: 0;
+}
+
+footer .f-info > li > a {
+    display: block;
+    font-size: 13px; 
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+footer .f-info > li:last-child ul a{
+    font-size: 12px; 
+}
+footer .f-info ul {}
+footer .f-info ul li {}
+footer .f-info ul li a{
+    font-size: 14px;
+    display: block;
+    padding: 3px 0;
+}
+footer .f-info ul li a:hover {
+    color: #888;
+}
+footer .banner {
+/*    background: rgba(0,0,0,0.5);*/
+    width: 100%; height: 250px;
+    padding: 40px 120px;
+    box-sizing: border-box;
+
+}
+footer .banner div, .banner ul {
+    width: 455px; height: 150px;
+    float: left;
+}
+footer .banner .award {
+    margin-right: 20px;
+    background: #333;
+}
+footer .banner .award a {
+    display:block;
+    width: 100%; height: 100%;
+    padding: 30px; 
+    box-sizing: border-box;
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+}
+footer .banner .award a span {}
+footer .banner .award a span b {}
+footer .banner .social {
+    background: #00c8c8;
+    padding: 30px; 
+    box-sizing: border-box;
+}
+footer .banner .social li {
+    float: left;
+    width: 33.3333%; height: 90px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 48px;
+}
+footer .banner .social li a {
+    display: block;
+    color: #fff;
+}
+footer .banner .social li i {
+}
+footer .copyright {
+    width: 100%; height: 50px;
+    background: #333;
+    color: #fff;
+    font-size: 13px;
+}
+.copyright .wrap {
+    padding: 0 120px;
+    box-sizing: border-box;
+}
+footer .copyright span {
+    display: block;
+    width: 50%; 
+    line-height: 50px;
+    float: left;
+}
+footer .copyright span.design {
+    text-align: right;
+}
+
 
 @media (max-width: 1220px) {
     .wrap { width: 100%; }
