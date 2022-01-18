@@ -1,0 +1,221 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+li { list-style: none; }
+a { text-decoration: none; color: #333; box-sizing: border-box;
+}
+body{
+    background: #eee;
+}
+
+.header {
+    width: 100%; height: 760px;
+/*    background: #ccc;*/
+/*    overflow: hidden;*/
+}
+.nav {
+    background:#fff;
+    width: 100%; height: 10%; 
+}
+.wrapper{
+    width: 90%; height: 100%;
+/*    display: flex;*/
+}
+.wrapper ul {
+    width: 100%; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.h_slide {
+    width: 100%; height: 90%;
+    position: relative;
+    overflow: hidden;
+    background: red;
+}
+.h_slideList li {
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    display: flex;
+    align-items: center;
+}
+.h_slideList li a {
+    width: 100%; height: 100%;
+}
+.h_slideList li img {
+    width: 100%;
+}
+.h_slide span {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5.8vh;
+    letter-spacing: 0.6rem;
+/*    font-size: 3.75rem;*/
+    color: #fff;
+    text-transform: uppercase;
+/*    background: #ccc;*/
+}
+
+/* locations */
+.ideas {
+    width: 100%; height: 650px;
+    background: ecf0f1;
+    background: #ecf0f1;
+}
+.ideas .wrapper {
+    display: flex;
+    align-items: center;
+/*    justify-content: center;*/
+    flex-wrap: wrap; 
+}
+.ideas h2 {
+    width: 100%; height: 10%;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+/*    padding: 2%;*/
+    box-sizing: border-box;
+/*    margin: 1% 0;*/
+    padding-top: 5%;
+}
+.ideas ul {
+    width: 100%; height: 80%;
+    display: flex;
+/*    box-sizing: border-box;*/
+    align-items: center;
+    justify-content: space-between;
+}
+.ideas ul li {
+    width: 30%; height: 60%;
+}
+.ideas ul li a {
+    display: block;
+    width: 100%; height: 100%;
+    position: relative;
+}
+.ideas ul li a img {
+    width: 100%; height: 100%;
+}
+.ideas ul li a div {
+    width: 70%; height: 25%;
+    position: absolute;
+    bottom: 0; left: 0;
+    margin: 0 10% 5% 10%;
+    background: rgba(255,255,255,0.9);
+    display: flex;
+    align-items: center;
+    padding: 5%;
+/*
+    vertical-align: middle;
+    line-height: normal;
+*/
+    line-height: 3.8rem;
+}
+.ideas ul li a div span {
+    width: 100%;  height: 100%;
+    font-size: 1.5rem;
+    padding-top: 5%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1.5px solid #ccc;
+    font-weight: bold;
+    text-transform: capitalize;
+/*    line-height: */
+}
+
+/* locations */
+.locations {
+    width: 100%; height: 800px;
+/*    padding: 5% 0 10% 0;*/
+    background: #ecf0f1;
+    padding-bottom: 15%;
+}
+.locations .wrapper {
+    display: flex;
+    align-items: center;
+/*    justify-content: center;*/
+    flex-wrap: wrap; 
+}
+.locations h3 {
+    width: 100%; height: 10%;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+}
+.locations_item {
+    width: 100%; height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+/*    background: #eee;*/
+}
+.locations_item > li {
+    width: 47%; height: 45%;
+    display: flex;
+    background: #fff;
+}
+.item {
+    width: 50%; height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item li {
+    width: 33.33333%; height: 27%; 
+}
+.item li:first-child {
+    width: 100%; height: 73%; 
+}
+.item  li a {
+    display: block;
+    width: 100%; height: 100%;
+}
+.item li a img {
+    width: 100%; height: 100%;
+}
+.info {
+    width: 50%; height: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item_title {
+    font-size: 1.875rem;
+    text-transform: capitalize;
+}
+.item_info {
+    width: 100%;
+    font-size: 1rem;
+}
+.bed img, .bath img {
+    padding-right: 0.7125rem;
+}
+.pool img {
+    padding-left: 0.7125rem;
+}
+.booknow {
+    width: 100%; height: 10%; 
+    background: #f31131;
+    position: relative;
+    line-height: 2rem;
+    border-radius: 50%;
+}
+.booknow a {
+    display: block;
+    font-size: 0.875rem;
+    color: #fff;
+    text-align: center;
+}
+
