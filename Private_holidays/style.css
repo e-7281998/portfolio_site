@@ -8,6 +8,12 @@ a { text-decoration: none; color: #333; box-sizing: border-box;
 body{
     background: #eee;
 }
+.clearfix:after, .clearfix:before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 
 .header {
     width: 100%; height: 760px;
@@ -22,7 +28,7 @@ body{
     width: 90%; height: 100%;
 /*    display: flex;*/
 }
-.wrapper ul {
+.header .wrapper ul {
     width: 100%; height: 100%;
     display: flex;
     align-items: center;
@@ -30,6 +36,31 @@ body{
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 500;
+}
+.header .wrapper ul li {
+    display: block;
+    height: 100%;
+/*    line-height: 5.5rem;*/
+/*    padding: 0 1%;*/
+/*    box-sizing: border-box;*/
+/*    width: 0%;*/
+/*    padding: 0 1rem;*/
+/*    width: 100%; height: 100%; */
+/*    position: relative;*/
+/*    padding-top: 2%;*/
+}
+.header .wrapper ul li a {
+/*    position: absolute;*/
+/*    top: 0; left: 0;*/
+    display: block;
+    line-height: 5.5rem;
+/*    margin-top: 10px;*/
+/*    vertical-align: middle;*/
+/*    padding-top: 20%;*/
+    width: 100%; height: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+/*    background: #ffc;*/
 }
 
 .h_slide {
@@ -104,6 +135,7 @@ body{
 }
 .ideas ul li a img {
     width: 100%; height: 100%;
+    border-radius: 10px;
 }
 .ideas ul li a div {
     width: 70%; height: 25%;
@@ -136,7 +168,7 @@ body{
     width: 100%; height: 800px;
 /*    padding: 5% 0 10% 0;*/
     background: #ecf0f1;
-    padding-bottom: 15%;
+    padding-bottom: 5%;
 }
 .locations .wrapper {
     display: flex;
@@ -206,15 +238,197 @@ body{
 }
 .booknow {
     width: 100%; height: 10%; 
-    background: #f31131;
-    position: relative;
+/*    margin: 10%;*/
+/*    background: #f31131;*/
+/*    position: relative;*/
     line-height: 2rem;
-    border-radius: 50%;
+/*    border-radius: 50%;*/
 }
 .booknow a {
+    text-transform: uppercase;
+    width: 50%; border-radius: 30px;
     display: block;
+    background: #f31131;
     font-size: 0.875rem;
     color: #fff;
     text-align: center;
 }
 
+/* different */
+.different {
+    width: 100%; height: 650px;
+    background: #ecf0f1;
+}
+.different .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.different h4 {
+    width: 100%; height: 10%;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    margin-top: 5%;
+}
+.d_item {
+    width: 33.33333%; height: 60%;
+/*    background: #ecf0f1;*/
+    padding: 3%;
+    box-sizing: border-box;
+}
+.d_icon {
+/*    display: block;*/
+    width: 30%; height: 29%; 
+    background: 1db474;
+/*    border-radius: 50%;*/
+}
+.d_icon img {
+    width: 100%; height: 100%;
+    border-radius:50%;
+}
+.d_item_title {
+    width: 100%; height: 20%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+/*    background: green;*/
+    padding-top: 5.5%;
+/*    line-height: 3rem;*/
+    box-sizing: border-box;
+}
+.d_info {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%; height: 45%;
+/*    background: #fff;*/
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+/* connect */
+.connect {
+    width: 100%; height: 570px;
+    background: #333;
+}
+.connect img {
+    width: 100%; height: 100%;
+    float: left;
+/*    position: relative;*/
+/*    z-index: -10*/
+}
+.connect .wrapper {
+    position: relative;
+}
+.message {
+    position: absolute;
+    bottom: 0; right: 3%;
+    background: #fff;
+    width: 35%; height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    box-sizing: border-box;
+    border: none;
+}
+.message p5 {
+    width: 80%; height: 10%;
+    font-size: 1.875rem;
+    margin-right: 20%;
+    font-weight: bold;
+}
+.m_name, .m_email, .m_message {
+    width: 100%; height: 15%;
+    border: none;
+/*    font-weight: bold;*/
+/*    background-color: #ccc;*/
+    padding: 0 2%;
+    border-bottom: 1px solid #ccc;
+/*    color: #ccc;*/
+}
+input::placeholder {
+    color: #ccc;;
+}
+.message button {
+    width: 40%;
+    border: none;
+    margin-right: 60%;
+    background: #f31131;
+    color: #fff;
+    font-size: 0.875rem;
+    border-radius: 20px;
+}
+.message button:hover {
+    cursor: pointer;
+}
+
+/* footer */
+.footer {
+    width: 100%; height: 300px;
+    background: #171d1c;
+    padding: 2% 0;
+    box-sizing: border-box;
+}
+.footer .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+/*    justify-content: space-around;*/
+}
+.f_list {
+    width: 75%; height: 100%;
+    display: flex;
+/*    padding-bottom: 5%;*/
+    margin-right: 5%;
+}
+.f_list > li {
+    width: 100%; height: 100%;
+}
+.footer li a {
+    color: #fff;
+}
+.f_list > li > a {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+    box-sizing: border-box;
+/*    background: skyblue;*/
+    display: block;
+}
+.ff_list li {
+    width: 100%; height: 100%;
+    padding: 0.125rem 0;
+    box-sizing: border-box;
+}
+.f_list > li:last-child .ff_list li{
+    width: 50%;
+    float:left;
+}
+.ff_list li a {
+    font-size: 0.875rem;
+    display: block;
+/*    background: #ccc;*/
+/*    width: 100%; height: 100%; */
+}
+.f_info {
+    color: #fff;
+    width: 20%; height: 100%; 
+    text-align: right;
+/*    display: flex;*/
+}
+.f_connect {
+    width: 100%; height: 30%;
+}
+.f_connect span {
+    display: block;
+/*    height: 50%;*/
+    font-size: 0.875rem;
+}
+.address {
+    width: 100%; height: 70%;
+}
+.address span {
+    font-size: 1rem;
+}
+.address div {
+    font-size: 0.875rem;
+}
+/*.f_connec*/

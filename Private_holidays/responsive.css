@@ -21,6 +21,9 @@
     .header .wrapper ul li:nth-child(3){
         display: none;
     }
+    .header .wrapper ul li a {
+        line-height: 2.5rem;
+    }
     .ideas h2 {
         padding-top: 10%;
     }
