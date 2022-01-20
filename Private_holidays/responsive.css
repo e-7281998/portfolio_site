@@ -1,3 +1,8 @@
+@media screen and (max-width:1228px){
+    .message h5 {
+        font-size: 1.5rem;
+    }
+}
 @media screen and (max-width: 1188px){
     .ideas ul li a div span {
         font-size: 1.3rem;
@@ -12,6 +17,17 @@
     }
     .bed, .bath, .pool {
         display: none;
+    }
+    .d_icon {
+        height: 25%;
+    }
+    .d_item_title {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 990px){
+    .message h5 {
+        font-size: 1.2rem;
     }
 }
 @media screen and (max-width:900px){
@@ -39,14 +55,174 @@
     .locations_item > li:nth-child(2n-1){
         display: none;
     }
+    .different {
+        height: 500px;
+    }
+    .d_info {
+        display: none;
+    }
+    .f_list> li > a {
+        font-size: 0.875rem;
+    }
+    .ff_list li a {
+        font-size: 0.65rem;
+    }
+    .f_connect span, .address span, .address div {
+        font-size: 0.65rem;
+    }
+}
+@media screen and (max-width:850px) {
+    .d_item {
+        width: 100%; height: 20%;
+        padding: 1% 10%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+/*        padding: 0 50%;*/
+    }
+    .d_icon{
+        width: 20%; height: 100%; 
+        padding: 0;
+    }
+    .d_item_title {
+        width: 50%; height: 100%; 
+    }
+    .connect {
+        height: 470px;
+    }
+}
+@media screen and (max-width:800px) {
+    .message h5 {
+        font-size: 1.05rem;
+    }
 }
 @media screen and (max-width: 700px){
-    .ideas h2, .locations h3 {
+    .ideas h2, .locations h3, .different h4 {
         font-size: 2.7rem;
+    }
+    .connect {
+        height: 400px;
+    }
+    .ideas ul li {
+        height: 50%;
+    }
+    .message h5 {
+        font-size: 0.875rem;
+    }
+    .m_name, .m_email, .m_message {
+        height: 10%; 
+    }
+    .message button {
+        height: 10%;
+    }
+    .f_list {
+        width: 100%; height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+/*        align-items: center;*/
+/*        justify-content: center;*/
+    }
+    .f_list > li, .f_list > li:last-child {
+        width: 50%; height: 50%; 
+        text-align: center;
+        padding: 0;margin: 0;
+    }
+    .ff_list {
+        display: none;
+    }
+    .f_info {
+        width: 100%; height: 50%;
+/*        display: flex;*/
+        justify-content: space-aroundspace-are;
+/*        align-content: center;*/
+    }
+    .f_connect {
+        width: 100%;
+        display: flex;
+/*        align-items: baseline;*/
+/*        padding: 0; margin: 0;*/
+/*        text-align: center;*/
+/*        display: inline-block;*/
+    }
+    .address {
+        width: 100%; height: 50%;
+        text-align: center;
+/*        text-align: center;*/
+    }
+    .address br {
+        display: none;
     }
 }
 @media screen and (max-width: 600px){
-    .ideas h2, .locations h3 {
+    .ideas h2, .locations h3, .different h4 {
         font-size: 2rem;
+    }
+    .ideas ul li {
+        width: 70%; height: 50%;
+    }
+    .ideas ul li:nth-child(2){
+        display: none;
+    }
+    .locations_item li {
+        display: flex;
+        flex-wrap: wrap;
+/*        align-items: center;*/
+/*        justify-content: space-between;*/
+    }
+    .item {
+        width: 100%; height: 80%;
+    }
+    .item li {
+        display: none;
+    }
+    .item li:first-child{
+        display: block;
+        width: 100%; height: 100%;
+    }
+    .info {
+        width: 100%; height: 20%; 
+/*        display: flex;*/
+/*        flex-wrap: wrap;*/
+    }
+    .item_title {
+        width: 50%; height: 100%;
+        display: block;
+        text-align: center;
+/*        background: red;*/
+    }
+    .item_info {
+        display: none;
+    }
+    .booknow{
+        width: 50%; height: 20%;
+    }
+}
+@media screen and (max-width: 460px){
+    
+    .header .wrapper ul li {
+        display: none;
+    }
+    .ideas h2, .locations h3, .different h4 {
+        font-size: 1.7rem;
+    }
+    .logo {
+/*        background: #fef;*/
+        width: 70%; height: 100%;
+        padding: 2% 0;
+        box-sizing: border-box;
+/*        width: 100%; height: 100%; */
+    }
+    .logo img {
+        width: 100%; height: 100%;
+    }
+    .header .wrapper ul li:nth-child(3){
+        display: block;
+/*        line-height: */
+    }
+}
+@media screen and (max-width: 460px){
+    .booknow a {
+        font-size: 0.75rem;
     }
 }
