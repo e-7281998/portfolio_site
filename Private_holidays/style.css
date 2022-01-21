@@ -74,20 +74,26 @@ body{
     width: 100%; height: 90%;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 /*    background: red;*/
 }
 .h_slideList li {
     width: 100%; height: 100%;
     position: absolute;
     top: 0; left: 0;
-    display: flex;
-    align-items: center;
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    flex: {1 1 0};*/
 }
 .h_slideList li a {
+    display: block;
     width: 100%; height: 100%;
+    text-align: center;
 }
 .h_slideList li img {
-    width: 100%;
+    object-fit: cover;
+    width: 100%; height: 100%;
 }
 .h_slide span {
     width: 100%;
@@ -124,26 +130,51 @@ body{
 /*    margin: 1% 0;*/
     padding-top: 5%;
 }
-.ideas ul {
+.ideaSlide {
     width: 100%; height: 80%;
     display: flex;
 /*    box-sizing: border-box;*/
     align-items: center;
     justify-content: space-between;
 }
-.ideas ul li {
+.ideaSlide > li {
     width: 30%; height: 60%;
+    position: relative;
 }
-.ideas ul li a {
+.ideaSlide > li a {
     display: block;
     width: 100%; height: 100%;
     position: relative;
 }
-.ideas ul li a img {
+.ideaSlide > li a img {
     width: 100%; height: 100%;
     border-radius: 10px;
 }
-.ideas ul li a div {
+
+.ideaList {
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+}
+.ideaList li {
+    display: inline-block;
+}
+.ideaList li {
+    float: left;
+}
+/*
+.ideaList a {
+    display: block;
+    width: 100%; height: 100%;
+}
+.ideaList a img {
+    width: 100%; height: 100%; 
+}
+*/
+
+
+
+.ideaSlide > li > a div {
     width: 70%; height: 25%;
     position: absolute;
     bottom: 0; left: 0;
@@ -152,13 +183,9 @@ body{
     display: flex;
     align-items: center;
     padding: 5%;
-/*
-    vertical-align: middle;
-    line-height: normal;
-*/
     line-height: 3.8rem;
 }
-.ideas ul li a div span {
+.ideaSlide > li > a div span {
     width: 100%;  height: 100%;
     font-size: 1.5rem;
     padding-top: 5%;
@@ -216,10 +243,41 @@ body{
 .item li a {
     display: block;
     width: 100%; height: 100%;
+    position: relative;
 }
 .item li a img {
     width: 100%; height: 100%;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
+.item li a img:hover {
+    opacity: 0.6;
+}
+
+.item li a:before, .item li a:after{
+    content:'';
+    background: #fff;
+    position: absolute;
+    left: 50%; top: 50%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease;
+}
+.item li a:before {
+    width: 30%; height: 1px;
+    left: 80%;
+}
+.item li a:after {
+    width: 1px; height:30%;
+    top: 20%;
+}
+.item li a:hover:before, 
+.item li a:hover:after {
+    opacity: 1;
+    left: 50%; top: 50%;
+}
+
 .info {
     width: 50%; height: 100%;
     padding: 2%;
@@ -321,6 +379,7 @@ body{
 .connect {
     width: 100%; height: 570px;
     background: #333;
+    overflow: hidden;
 }
 .connect img {
     width: 100%; height: 100%;
@@ -332,8 +391,9 @@ body{
     position: relative;
 }
 .message {
+/*    display: none;*/
     position: absolute;
-    bottom: 0; right: 3%;
+    bottom: -100px; right: 3%;
     background: #fff;
     width: 35%; height: 60%;
     display: flex;
@@ -341,6 +401,13 @@ body{
     padding: 2%;
     box-sizing: border-box;
     border: none;
+    transition: all 0.8s ease;
+/*    opacity: 0;*/
+}
+.message_action {
+/*    display: block;*/
+    bottom: 0;
+    opacity: 1;
 }
 .message h5 {
     width: 80%; height: 10%;
