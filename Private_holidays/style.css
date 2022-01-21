@@ -130,51 +130,26 @@ body{
 /*    margin: 1% 0;*/
     padding-top: 5%;
 }
-.ideaSlide {
+.ideas ul {
     width: 100%; height: 80%;
     display: flex;
 /*    box-sizing: border-box;*/
     align-items: center;
     justify-content: space-between;
 }
-.ideaSlide > li {
+.ideas ul li {
     width: 30%; height: 60%;
-    position: relative;
 }
-.ideaSlide > li a {
+.ideas ul li a {
     display: block;
     width: 100%; height: 100%;
     position: relative;
 }
-.ideaSlide > li a img {
+.ideas ul li a img {
     width: 100%; height: 100%;
     border-radius: 10px;
 }
-
-.ideaList {
-    width: 100%; height: 100%;
-    position: absolute;
-    top: 0; left: 0;
-}
-.ideaList li {
-    display: inline-block;
-}
-.ideaList li {
-    float: left;
-}
-/*
-.ideaList a {
-    display: block;
-    width: 100%; height: 100%;
-}
-.ideaList a img {
-    width: 100%; height: 100%; 
-}
-*/
-
-
-
-.ideaSlide > li > a div {
+.ideas ul li a div {
     width: 70%; height: 25%;
     position: absolute;
     bottom: 0; left: 0;
@@ -183,9 +158,13 @@ body{
     display: flex;
     align-items: center;
     padding: 5%;
+/*
+    vertical-align: middle;
+    line-height: normal;
+*/
     line-height: 3.8rem;
 }
-.ideaSlide > li > a div span {
+.ideas ul li a div span {
     width: 100%;  height: 100%;
     font-size: 1.5rem;
     padding-top: 5%;
